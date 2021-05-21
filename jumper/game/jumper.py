@@ -15,7 +15,7 @@ class Jumper:
 
     def get_guess(self):
         #call display guess_prompt
-        message = "What letter do you think is in my word"
+        message = "What letter do you think is in my word: "
         self.guess = self.console.display_message(message)
         
     def is_letter(self, guess, word):
