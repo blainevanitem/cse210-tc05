@@ -11,6 +11,7 @@ class Console:
         for i in range (len(list)):
             print(list[i],end='')
             print(" ",end='')
+        print("")
     def display_message(self, message):
         guess = input(message)
 
