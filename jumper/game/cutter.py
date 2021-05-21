@@ -3,7 +3,7 @@ class Cutter:
         get_word = ""
     def get_word(self, word_list):
         # get word, save word to self.word
-        self.word_list = get_word
+        self.word_list = self.get_word
     def cut_parachute(self, get_guess):
         
         '''
@@ -13,5 +13,5 @@ class Cutter:
         if get_guess == True:
             return False
         else:
-            self.parachute = self.parachute.append[1] - 1
+            self.parachute = self.parachute.pop[0]
             return True
