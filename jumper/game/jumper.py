@@ -1,4 +1,4 @@
-import game.console
+from game.console import Console
 
 class Jumper:
     def __init__(self):
@@ -22,11 +22,11 @@ class Jumper:
         '''
         compare letter to word
         '''
-        times = word.count(guess)
+        times = word.count(self.guess)
         
-        space = word.index(guess)
-        self.empty_word.insert(guess, space)
+        space = word.index(self.guess)
+        self.empty_word.insert(self.guess, space)
         if times > 1:
             for _ in range(1, times):
-                space = word.index(guess,space)
-                self.empty_word.insert(guess, space)
+                space = word.index(self.guess,space)
+                self.empty_word.insert(self.guess, space)
