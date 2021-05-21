@@ -2,9 +2,9 @@ from game.console import Console
 
 class Jumper:
     def __init__(self):
-        empty_word = []
-        guess = ""
-        console = Console()
+        self.empty_word = []
+        self.guess = ""
+        self.console = Console()
         
 
     def blank_word(self,word):
@@ -18,15 +18,3 @@ class Jumper:
         message = "What letter do you think is in my word: "
         self.guess = self.console.display_message(message)
         
-    def is_letter(self, guess, word):
-        '''
-        compare letter to word
-        '''
-        times = word.count(self.guess)
-        
-        space = word.index(self.guess)
-        self.empty_word.insert(self.guess, space)
-        if times > 1:
-            for _ in range(1, times):
-                space = word.index(self.guess,space)
-                self.empty_word.insert(self.guess, space)
