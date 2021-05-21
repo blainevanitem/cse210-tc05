@@ -9,8 +9,8 @@ class Console:
     def display_wordspace(self,list):
 
         for i in range (len(list)):
-            print(list[i])
-            print(" ")
+            print(list[i],end='')
+            print(" ",end='')
     def display_message(self, message):
         guess = input(message)
 
