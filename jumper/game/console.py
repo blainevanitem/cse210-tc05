@@ -1,4 +1,4 @@
-class console:
+class Console:
 
 
     def display_parachuter(self,list):
