@@ -21,3 +21,11 @@ class Cutter:
         return true or false
         '''
         self.parachute.pop[0]
+    def update_empty(self,guess):
+        times = self.word.count(guess)
+        
+        space = self.word.index(guess)
+        self.empty_word[space] = guess
+        if times>1:
+            for _ in range(1, times):
+                space = word.index(self.guess,space)
