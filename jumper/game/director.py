@@ -7,6 +7,7 @@ class Director:
     def __init__(self):
         self.keep_playing = True
         self.word_list = ["Example"]
+        self.random_word = ""
         self.parachuter = ["  ___  "," /___\ "," \   / ","  \ /  ","   0   ","  /|\  ","  / \  ","       ","^^^^^^^"]
         self.cut_parachute = False
         self.console = Console()
@@ -14,7 +15,7 @@ class Director:
         self.cutter = Cutter()
 
     def start_game(self):
-        #need to select the word first and get spaces.
+        self.random_word = self.cutter.get_word(self.word_list) #need to select the word first and get spaces.
         while(self.keep_playing):
             self.do_outputs()
             self.do_updates()
