@@ -9,6 +9,7 @@ class Director:
         self.word_list = ["Example"]
         self.cut_parachute = False
         self.wrongs = 0
+        self.guess = ""
         self.console = Console()
         self.jumper = Jumper()
         self.cutter = Cutter()
@@ -29,12 +30,13 @@ class Director:
         self.cutter.cut_parachute()
         if self.cut_parachute == True:
             self.wrongs += 1
+            self.cutter.update_empty(guess)
             self.cutter.cut_parachute()
         #need to update the blank word array with correct letter
 
     def get_inputs(self):
-        guess = self.console.display_message("Pick a letter to A-Z: ")
-        self.cut_parachute = self.jumper.in_word(guess, self.cutter.word)
+        self.guess = self.console.display_message("Pick a letter to A-Z: ")
+        self.cut_parachute = self.jumper.in_word(self.guess, self.cutter.word)
 
 
     

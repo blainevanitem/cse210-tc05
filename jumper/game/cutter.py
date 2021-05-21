@@ -20,7 +20,7 @@ class Cutter:
         for loop to see if letter in word.
         return true or false
         '''
-        self.parachute.pop[0]
+        self.parachuter.pop[0]
     def update_empty(self,guess):
         times = self.word.count(guess)
         
