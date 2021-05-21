@@ -4,7 +4,7 @@ class Jumper:
         self.guess = ""        
 
         
-    def is_letter(self,letter, word):
+    def in_word(self,letter, word):
         '''
         compare letter to word
         '''
