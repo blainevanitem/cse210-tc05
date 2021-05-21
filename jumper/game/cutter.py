@@ -1,5 +1,6 @@
-get_word = ""
 class Cutter:
+    def __init__(self):
+        get_word = ""
     def get_word(self, word_list):
         # get word, save word to self.word
         self.word_list = get_word
@@ -9,8 +10,8 @@ class Cutter:
         for loop to see if letter in word.
         return true or false
         '''
-        for self.get_guess in get_word:
-            if self.get_guess == True:
-                return False
-            else:
-                return True
+        if get_guess == True:
+            return False
+        else:
+            self.parachute = self.parachute.append[1] - 1
+            return True
