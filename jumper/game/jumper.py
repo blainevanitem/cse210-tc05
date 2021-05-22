@@ -1,12 +1,10 @@
 
-class Jumper:      
-
-        
-    def in_word(self,letter, word):
-        '''
-        compare letter to word
-        '''
-        self.guess = letter
+class Jumper:
+     
+ 
+    def get_guess(self):
+        #call display guess_prompt
+        return input("What is your guess? ")
         
         if word.count(letter) == 0:
             return True
