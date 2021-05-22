@@ -29,4 +29,4 @@ class Cutter:
         if times>1:
             for _ in range(1, times):
                 space = self.word.index(guess,space)
-                self.empty_word[space] = self.guess
+                self.empty_word[space] = guess
