@@ -4,6 +4,22 @@ from game.cutter import Cutter
 import random
 
 class Director:
+    """A code template for a person who directs the game. The responsibility of 
+    this class of objects is to control the sequence of play.
+    
+    Stereotype:
+        Controller
+
+    Attributes:
+        keep_playing (boolean): Whether or not the game can continue.
+        random_word (string): Word for player to guess
+        parachuter: list of strings for an ascii art
+        cut_parachute (boolean): Wheter or not to cut the parachute
+        guess (string): letter guessed by player
+        console (Console): An instance of the class of objects known as Console.
+        jumper (Jumper): An instance of the class of objects known as Jumper.
+        cutter (Cutter): An instance of the class of objects known as Cutter.
+    """
     def __init__(self):
         self.keep_playing = True
         self.random_word = ""

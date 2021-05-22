@@ -1,5 +1,19 @@
 import random
 class Cutter:
+    """ A manipulative person who is willing to cut the parachute off another persons back
+    if they cannot guess the word that they are thinking of. The responsibility of this class 
+    is to store the word and check if the player is guessing correctly and cut the 
+    parachute if the guess is wrong.
+
+    Stereotype:
+        Information Holder
+
+    Attributes:
+        word (string): A placeholder for the word to be guessed.
+        empty_word (list): A placeholder for the empty list that will hold the correct guessed letters
+        wrong_guess (integer): A placeholder for how many wrong guesses have been made
+        incorrect (boolean): If the player is incorrect or not in thier guess
+    """
     def __init__(self):
         self.word = ""
         self.empty_word = []
