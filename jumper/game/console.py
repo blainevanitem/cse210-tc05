@@ -2,19 +2,22 @@ class Console:
 
 
     def display_parachuter(self,parachuter):
+        #Display list with new lines for each index
         print("")
         for x in range(0,len(parachuter)):
             print(parachuter[x])
     
     def display_wordspace(self,list):
+        #Display list with spaces between each index
         print(" ".join(list))
         
-    def display_message(self, message):
+    def display_message(self, message):\
+        #Display string and recieve input
         guess = input(message)
-
         return guess
 
     def display_answer(self,answer):
+        #Display answer
         print("The word was: " + answer)
 
     
