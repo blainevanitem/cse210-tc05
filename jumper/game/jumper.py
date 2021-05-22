@@ -9,7 +9,7 @@ class Jumper:
         self.guess = letter
         
         if word.count(letter) == 0:
-            return False
-        else:
             return True
+        else:
+            return False
             
