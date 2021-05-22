@@ -6,7 +6,7 @@ import random
 class Director:
     def __init__(self):
         self.keep_playing = True
-        self.word_list = ["Example"]
+        self.word_list = ["example"]
         self.cut_parachute = False
         self.wrongs = 0
         self.guess = ""
@@ -27,10 +27,9 @@ class Director:
         self.console.display_parachuter(self.cutter.parachuter)
 
     def do_updates(self):
-        self.cutter.cut_parachute()
         if self.cut_parachute == True:
             self.wrongs += 1
-            self.cutter.update_empty(guess)
+            self.cutter.update_empty(self.guess)
             self.cutter.cut_parachute()
         #need to update the blank word array with correct letter
 
